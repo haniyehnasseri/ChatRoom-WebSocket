@@ -21,7 +21,6 @@ public class ChatEndpoint {
     @OnOpen
     public void onOpen(Session session, @PathParam("username") String username) throws IOException, EncodeException {
 
-        System.out.println("Username " + username);
         this.session = session;
         chatEndpoints.add(this);
         users.put(session.getId(), username);
@@ -56,7 +55,6 @@ public class ChatEndpoint {
         chatEndpoints.forEach(endpoint -> {
             synchronized (endpoint) {
                 try {
-                    System.out.println(message);
                     endpoint.session.getBasicRemote()
                             .sendObject(message);
                 } catch (IOException | EncodeException e) {
