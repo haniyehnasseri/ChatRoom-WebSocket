@@ -1,0 +1,9 @@
+
+U	java:S106"9Replace this use of System.out or System.err by a logger.(ÎŒ‘î8¾º’±°/
+‡
+java:S11307"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(æªÃâøÿÿÿÿ
+“
+java:S11307"xRemove the declaration of thrown exception 'javax.websocket.EncodeException', as it cannot be thrown from method's body.(æªÃâøÿÿÿÿ
+c
+java:S24459"M"endpoint" is a method parameter, and should not be used for synchronization.(¸Êøœ
+Z	java:S106;"9Replace this use of System.out or System.err by a logger.(øºÑûúÿÿÿÿ8¬Ê—±°/
